@@ -8,14 +8,21 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: "http://localhost:3000",
+  })
+);
+
+// app.use(cors());
 app.use(express.json());
 
 Lab5(app);
 ModuleRoutes(app);
 CourseRoutes(app);
 HelloRoutes(app);
-app.listen(4000);
+app.listen(4001);
 
 
 
