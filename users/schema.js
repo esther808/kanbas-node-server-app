@@ -12,6 +12,7 @@ const schema = new mongoose.Schema(
       default: "USER",
       enum: ["ADMIN", "FACULTY", "STUDENT", "USER"],
     },
+    
     dob: Date,
     doh: { type: Date, default: Date.now },
   },

@@ -1,4 +1,4 @@
-import Database from "../Database/index.js";
+import Database from "../Database/index.mjs";
 
 function CourseRoutes(app) {
 
